@@ -27,8 +27,8 @@ sudo systemctl restart docker
 
 # AWS Installation to access ECR
 #sudo apt install awscli -y
-#
-aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin <accountID>.dkr.ecr.ap-south-1.amazonaws.com
+# uncomment the below line incase using ECR
+#aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin <accountID>.dkr.ecr.ap-south-1.amazonaws.com
 
 #NEW RELIC SETUP
 #curl -Ls https://download.newrelic.com/install/newrelic-cli/scripts/install.sh | bash && sudo NEW_RELIC_API_KEY=<new_relic_api_key> NEW_RELIC_ACCOUNT_ID=<new_relic_account_id> /usr/local/bin/newrelic install
