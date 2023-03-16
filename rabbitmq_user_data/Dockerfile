@@ -1,0 +1,2 @@
+FROM rabbitmq:3.9.5
+RUN rabbitmq-plugins enable --offline rabbitmq_management rabbitmq_peer_discovery_aws rabbitmq_federation rabbitmq_prometheus rabbitmq_shovel_management rabbitmq_shovel
